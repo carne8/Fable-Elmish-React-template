@@ -1,0 +1,28 @@
+{
+  "name": "fsharp-web-template",
+  "version": "1.0.0",
+  "description": "A template to make web sites with F# and Fable",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prestart": "dotnet tool restore && dotnet fable clean --yes",
+    "start": "dotnet fable watch src --define DEBUG --define LOG --run webpack-dev-server",
+    "build": "dotnet fable src && webpack"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "dotenv-webpack": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "remotedev": "^0.2.9",
+    "sass": "^1.46.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  }
+}
