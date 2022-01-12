@@ -1,7 +1,7 @@
 {
   "name": "fsharp-web-template",
   "version": "1.0.0",
-  "description": "A template to make web sites with F# and Fable",
+  "description": "A template to create web applications with F# and React",
   "license": "MIT",
   "private": true,
   "scripts": {
