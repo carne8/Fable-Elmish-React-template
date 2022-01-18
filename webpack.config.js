@@ -39,7 +39,6 @@ module.exports = {
         use: [
           "style-loader",
           "css-loader",
-          "resolve-url-loader",
           {
             loader: "sass-loader",
             options: {
@@ -51,7 +50,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*)?$/,
-        type: 'asset/resource'
+        type: "asset/resource"
       }
     ],
   }
