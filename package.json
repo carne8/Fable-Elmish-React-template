@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "preinstall": "dotnet restore && dotnet tool restore && paket install",
+    "preinstall": "dotnet restore && dotnet tool restore && dotnet paket install",
     "start": "dotnet fable watch src --define DEBUG --run webpack-dev-server",
     "build": "dotnet fable src && webpack"
   },
